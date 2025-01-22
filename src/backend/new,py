@@ -1,0 +1,32 @@
+import sqlite3
+
+# Connect to the database
+conn = sqlite3.connect('database.db')
+cursor = conn.cursor()
+
+# Create the MOVIES table with proper columns
+cursor.execute("""
+    CREATE TABLE IF NOT EXISTS MOVIES (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        title TEXT NOT NULL,
+        description TEXT NOT NULL
+    );
+""")
+
+# Insert movies
+movies = [
+    (1, 'Inception', 'Cobb steals information from his targets by entering their dreams. He is wanted for his alleged role in his wife\'s murder and his only chance at redemption is to perform a nearly impossible task.'),
+    (2, 'The Matrix', 'When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.'),
+    (3, 'The Dark Knight', 'Cobb steals information from his targets by entering their dreams. He is wanted for his alleged role in his wife\'s murder and his only chance at redemption is to perform a nearly impossible task.'),
+    (4, 'The Matrix', 'When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.'),
+    (5, 'Inception', 'Cobb steals information from his targets by entering their dreams. He is wanted for his alleged role in his wife\'s murder and his only chance at redemption is to perform a nearly impossible task.'),
+    (6, 'The Dark Knight', 'Cobb steals information from his targets by entering their dreams. He is wanted for his alleged role in his wife\'s murder and his only chance at redemption is to perform a nearly impossible task.')
+]
+
+# Insert movies into database
+cursor.executemany("INSERT INTO MOVIES (id, title, description) VALUES (?, ?, ?)", movies)
+
+# Commit changes and close connection
+conn.commit()
+conn.close()
+

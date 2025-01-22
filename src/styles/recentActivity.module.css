@@ -1,0 +1,47 @@
+.moviesGrid {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.movieHolder {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  transition: transform 0.2s ease-in-out;
+}
+  
+.movieHolder:hover {
+  transform: scale(1.05);
+}
+  
+.movieHolder img {
+ object-fit: fill;
+}
+  
+.movieHolder h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+  
+.movieHolder p {
+  font-size: 16px;
+  color: #555;
+ }
+
+.movieHolder p {
+  font-size: 16px;
+  color: #555;
+ }
+.movieHolder h3 {
+    font-size: 16px;
+    color: #555;
+}
+
+.movieHolder comment{
+    font-weight: bold;
+}

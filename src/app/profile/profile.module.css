@@ -1,0 +1,32 @@
+.container{
+    border: 1px solid #839192;
+    padding-left: 15px;
+    width: 80vw;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+.container h1{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #273746;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+}
+.details{
+    position: absolute;
+    top: 5vh;
+    left: 10vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+.keys{
+    color: #839192;
+    font-weight: 500;
+    font-size: larger;
+}
+.values{
+    padding-bottom: 1vw;
+    font-size: larger;
+}
