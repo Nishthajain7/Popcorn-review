@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Inception",
     "year": 2010,
-    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ljsZTbVsrQSqZgWeep2B1QiDKuh.jpg",
+    "image": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
     "description": "Cobb steals information from his targets by entering their dreams. He is wanted for his alleged role in his wife's murder and his only chance at redemption is to perform a nearly impossible task."
   },
   {
@@ -22,23 +22,52 @@
   },
   {
     "id": 4,
-    "name": "The Matrix",
-    "year": 1999,
-    "image": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
-    "description": "When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans."
+    "name": "3 Idiots",
+    "year": 2009,
+    "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/66A9MqXOyVFCssoloscw79z8Tew.jpg",
+    "description": "Two friends are searching for their long-lost companion. They revisit their college days and recall the memories of their friend who inspired them to think differently, even as the rest of the world called them idiots."
   },
   {
     "id": 5,
-    "name": "Inception",
-    "year": 2010,
-    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ljsZTbVsrQSqZgWeep2B1QiDKuh.jpg",
-    "description": "Cobb steals information from his targets by entering their dreams. He is wanted for his alleged role in his wife's murder and his only chance at redemption is to perform a nearly impossible task."
+    "name": "Jab We Met",
+    "year": 2007,
+    "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sQ7A7jyTbkK90vjd8yCRuoyL9CK.jpg",
+    "description": "A depressed businessman accidentally meets a bubbly and talkative woman during a train journey. Their interactions bring unexpected turns to their lives and relationships."
   },
   {
-    "id": 6,
-    "name": "The Dark Knight",
-    "year": 2008,
-    "image": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
-    "description": "Cobb steals information from his targets by entering their dreams. He is wanted for his alleged role in his wife's murder and his only chance at redemption is to perform a nearly impossible task."
+    "id": 8,
+    "name": "Pushpa: The Rise",
+    "year": 2021,
+    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1T21FblunT0y8fz7YaW8JMYgUKm.jpg",
+    "description": "The rise of a laborer in the smuggling syndicate of red sandalwood is marked by ambition, love, and unyielding determination in the face of numerous challenges."
+  },
+  {
+    "id": 9,
+    "name": "Avengers",
+    "year": 2019,
+    "image": "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+    "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe."
+  },
+  {
+    "id": 10,
+    "name": "Devara: Part 1",
+    "year": 2024,
+    "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xpp2Q64Ynk6YvwKsK8z7Dg6AzxJ.jpg",
+    "description": "A mighty sea warrior takes a violent stand against the criminal deeds of his village. Years later, his mild-mannered son walks a path of his own."
+  },
+  {
+    "id": 11,
+    "name": "RRR",
+    "year": 2022,
+    "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/tjpiEnZBUAA8pdNPRKa5vP2Zpqw.jpg",
+    "description": "A fearless warrior on a perilous mission comes face to face with a steely cop serving British forces in this epic saga set in pre-independent India."
+  },
+  {
+    "id": 12,
+    "name": "Chhichhore",
+    "year": 2019,
+    "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/l9v4sxQPIrYtqXeg03sFHHNFZpa.jpg",
+    "description": "Following a group of friends from university as they progress into middle-age life and go their own separate ways."
   }
+  
 ]

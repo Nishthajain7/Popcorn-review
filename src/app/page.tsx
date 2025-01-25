@@ -15,6 +15,7 @@ export default function Home() {
   const [Registering, setRegistering] = useState(false);
   const [incorrectLogin, setIncorrectLogin] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
   const [userata, setuserData] = useState({
     name: "",
     username: "",
@@ -109,12 +110,20 @@ export default function Home() {
     }));
   };
 
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(e.target.value.toLowerCase());
+  };
+
+  const filteredMovies = movies.filter((movie) =>
+    movie.name.toLowerCase().includes(searchQuery)
+  );
+
   return (
     <main>
 
       <div className="px-20 z-20 fixed flex h-28 gap-4 bg-[#e8daef] items-center w-full">
         {isLoggedIn && <button className="icon" onClick={toggleMenu}><FaBars /></button>}
-        <input className="h-10 border-2 border-gray-300 rounded-full px-4 w-full" name="query" placeholder="Search for a movie" />
+        <input className="h-10 border-2 border-gray-300 rounded-full px-4 w-full" name="query" placeholder="Search for a movie" onChange={handleSearch}/>
         {isLoggedIn ? <button className="bg-slate-500 text-white px-6 py-2 rounded-3xl hover:bg-slate-800 active:scale-95" onClick={logout}>Logout</button> : <button className="bg-slate-500 text-white px-6 py-2 rounded-3xl hover:bg-slate-800 active:scale-95" onClick={toggleFormOpen}>Login</button>}
       </div>
 
@@ -158,10 +167,6 @@ export default function Home() {
           <div className="icon"><FaClipboardList /></div>
           <p>Watchlist</p>
         </Link>
-        <Link href="recentActivity" className="option">
-          <div className="icon"><LiaCommentSolid /></div>
-          <p>Recent activity</p>
-        </Link>
 
       </div>
 
@@ -176,7 +181,7 @@ export default function Home() {
         /></div>
         <p className="text-2xl text-center pb-[5vh] font-bold text-slate-600">Rate Movies, Write Reviews, And Create Personalized Watchlists.</p>
         <div className="grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-[30px] px-20 transition-transform duration-200 ease-in-out text-center">
-          {movies.map((movie) => (
+          {filteredMovies.map((movie) => (
             <div key={movie.id} className="m-auto w-fit flex flex-col items-center border-2 border-gray-300 rounded-[10px] p-[10px] bg-gray-100 transition-transform duration-200 ease-in-out hover:scale-105 text-center">
               <Link href={`/movieDetails/${movie.id}`}>
               <Image src={movie.image} alt={movie.name} width={200} height={300} className="rounded-[8px] object-fill" />

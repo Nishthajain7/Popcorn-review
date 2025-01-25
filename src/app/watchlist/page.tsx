@@ -24,10 +24,6 @@ const WatchList = () => {
         method: 'GET',
         credentials: 'include',
       });
-      if (!response.ok) {
-        console.error('Failed to fetch user data:', response.statusText);
-        return;
-      }
       const data = await response.json();
 
       if (data.status === 'success') {
